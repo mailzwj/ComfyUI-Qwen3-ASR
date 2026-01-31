@@ -1,0 +1,22 @@
+[project]
+name = "comfyui-qwen3-asr"  # Unique identifier (immutable after creation)
+description = "ComfyUI custom nodes for Qwen3-ASR"
+version = "1.0.0"  # Semantic versioning
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "torch",
+    # "torchaudio",
+    "qwen_asr",
+    "traceback",
+    "numpy",
+    "json"
+]
+
+[project.urls]
+Repository = "https://github.com/mailzwj/ComfyUI-Qwen3-ASR"
+
+[tool.comfy]
+PublisherId = "meet-ai"
+DisplayName = "Qwen3-ASR - Voice to Text"
+Icon = ""
