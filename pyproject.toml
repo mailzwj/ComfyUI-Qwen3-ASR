@@ -1,5 +1,5 @@
 [project]
-name = "comfyui-qwen3-asr"  # Unique identifier (immutable after creation)
+name = "comfyui_qwen3_asr"  # Unique identifier (immutable after creation)
 description = "ComfyUI custom nodes for Qwen3-ASR"
 version = "1.0.0"  # Semantic versioning
 requires-python = ">=3.9"
