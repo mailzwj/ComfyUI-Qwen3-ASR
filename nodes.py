@@ -221,7 +221,7 @@ def load_qwen_model(model_choice: str, device: str, precision: str, max_inferenc
         # comfy_models_path = os.path.join(os.path.dirname(os.path.dirname(current_dir)), "models")
         comfy_models_path = folder_paths.models_dir
         qwen_root = os.path.join(comfy_models_path, "qwen-asr")
-        
+
         downloaded_path = download_model_if_needed(final_source, qwen_root)
         if downloaded_path:
             final_source = downloaded_path
@@ -235,6 +235,9 @@ def load_qwen_model(model_choice: str, device: str, precision: str, max_inferenc
             "❌ [Qwen3-ASR] Model class is not loaded because the 'qwen_asr' package failed to import. "
             "Please check the ComfyUI console for the detailed 'Critical Import Error' above."
         )
+    
+    if (forced_aligner):
+        download_model_if_needed("Qwen/Qwen3-ForcedAligner-0.6B", os.path.join(folder_paths.models_dir, "qwen-asr"))
     
     aligner_path = os.path.join(folder_paths.models_dir, "qwen-asr", "Qwen3-ForcedAligner-0.6B")
 
