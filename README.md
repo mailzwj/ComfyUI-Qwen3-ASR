@@ -6,6 +6,7 @@
 
 ## 📋 更新日志
 
+- **2026-02-01**: 优化依赖和文档
 - **2026-01-31**：`Qwen3-ASR`节点开发完成
 
 ## 功能特性
@@ -28,9 +29,9 @@ pip install -r requirements.txt
 ### 安装模型
 * 节点支持自动下载模型权重，但需确保网络畅通。
 * **推荐手动下载模型**，模型存放路径`models/qwen-asr`，目录结构如下（名称需一致）：
-  * `models/qwen-asr/Qwen3-ASR-1.7B`
-  * `models/qwen-asr/Qwen3-ASR-0.6B`
-  * `models/qwen-asr/Qwen3-ForcedAligner-0.6B`
+  * `models/qwen-asr/Qwen3-ASR-1.7B`：[Huggingface](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)、[Modelscope](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)
+  * `models/qwen-asr/Qwen3-ASR-0.6B`：[Huggingface](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)、[Modelscope](https://modelscope.cn/models/Qwen/Qwen3-ASR-0.6B)
+  * `models/qwen-asr/Qwen3-ForcedAligner-0.6B`：[Huggingface](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B)、[Modelscope](https://modelscope.cn/models/Qwen/Qwen3-ForcedAligner-0.6B)
 
 ## 致谢
 
