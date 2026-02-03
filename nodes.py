@@ -171,7 +171,7 @@ def load_qwen_model(model_choice: str, device: str, precision: str, max_inferenc
     
         
     # Cache key
-    cache_key = (model_choice, device, precision)
+    cache_key = (model_choice, device, precision, forced_aligner)
     if cache_key in _MODEL_CACHE:
         return _MODEL_CACHE[cache_key]
     
